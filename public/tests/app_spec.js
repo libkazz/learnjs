@@ -15,7 +15,7 @@ describe('LearnJS', function() {
   describe('problem view', function() {
     it('has a title that includes the problem number', function() {
       var view = learnjs.problemView('1');
-      expect(view.text()).toEqual('Problem #1 Coming soon!');
+      expect(view.text().trim()).toEqual('Problem #1 Coming soon!');
     });
   });
   it('invokes the router when loaded', function() {
